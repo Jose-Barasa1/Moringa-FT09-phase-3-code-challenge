@@ -95,3 +95,5 @@ class Magazine:
         major_contributors = ";".join([contributer.name for contributer in self.contributing_authors()]) if self.contributing_authors() else "None"
         article_titles = ";".join([article.title for article in self.articles]) if self.articles else "None"
         return f'MAGAZINE:{self.name} ||ID: {self.id} || ARTIC:{article_titles}|| CONTR:{contributer_titles} || MAJOR CONTR:{major_contributors}'
+    
+    ##

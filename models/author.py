@@ -75,3 +75,5 @@ class Author:
         article_titles = ";".join([article.title for article in self.articles]) if self.articles else "No articles"
         magazine_titles = "; ".join([magazine.name for magazine in self.magazines]) if self.magazines else "No magazines"
         return f'AUTHOR: {self.name} || id: {self.id} || MAGAZINES:{magazine_titles} || ARTICLES:{article_titles}'
+
+##
